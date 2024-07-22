@@ -1,0 +1,29 @@
+.payme {
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button,
+    textarea,
+    input {
+      width: 100%;
+      outline: none;
+      padding: 10px;
+      background-color: #aaa2;
+      border: none;
+      border-radius: 6px;
+    }
+    textarea {
+      height: 100px;
+    }
+    button {
+      background-color: blue;
+      color: white;
+    }
+  }
+}

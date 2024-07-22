@@ -1,0 +1,18 @@
+.update__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input {
+    padding: 5px;
+    border: 1.5ps solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  button {
+    margin-top: 10px;
+    padding: 5px;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+  }
+}

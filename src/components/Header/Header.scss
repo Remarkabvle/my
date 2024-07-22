@@ -1,0 +1,93 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 9999;
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 100px;
+  &__logo {
+    display: flex;
+    text-transform: uppercase;
+    padding: 10px;
+    background: dodgerblue;
+    color: #fff;
+    border-radius: 50%;
+  }
+  &__items {
+    display: flex;
+    gap: 20px;
+    padding-left: 100px;
+    button {
+      background: none;
+      border: none;
+      font-size: 16px;
+    }
+  }
+  &__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 8px 18px;
+    gap: 10px;
+    border: 1px solid #d5d5d5;
+    background: #f5f6fa;
+    border-radius: 25px;
+    input {
+      background: transparent;
+      outline: none;
+      border: none;
+      width: 90%;
+    }
+  }
+}
+
+.customer__search {
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 400px;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__frame {
+    padding: 5px;
+    border: 1.5px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    gap: 20px;
+    &__items {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__input {
+      width: 200px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .navbar__menu {
+    display: none;
+  }
+}
